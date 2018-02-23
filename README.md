@@ -1,7 +1,7 @@
 # HOS CLOUD API 101 Example	 	 	
-##HOW TO USE ARTOFUS HOS CLOUD API
+## HOW TO USE ARTOFUS HOS CLOUD API
 
-###1.Setup local NodeJs server
+### 1.Setup local NodeJs server
 
 Run following commands to start local server:
 ```bash
@@ -20,7 +20,7 @@ apt-get install -y nodejs
 
 Go to http://localhost:3001 to check HOS CLOUD test Stream
 
-###2. Login user
+### 2. Login user
 
 Connect module require to the javascript file. And, on the received object, call method POST by passing the first argument route to authorization server, second argument is an object with the setting with user_data, that will be transferred? And third parameter a callback function that takes two parameters, object with error and response object. In the body of function take response object and call property body. For example:
 
@@ -69,7 +69,7 @@ request.post(HOS_MANAGEMENT, {
         collectionName: 'roles' },
      auth0_token: 'eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImtpZCI6Ik5FUXdNa0pDT1RJNVJUUTRNRVJCTmtORE5EZ3dNVVpHTWpjMFFrWkVOa013UlVRMFFqVkJPUSJ9.eyJpc3MiOiJodHRwczovL2FydG9mdXMuZXUuYXV0aDAuY29tLyIsInN1YiI6ImF1dGgwfDVhMjdiZTY1NGFhMTMyNjk2NTNjZTQxMiIsImF1ZCI6Imh0dHBzOi8vYXJ0b2Z1cy5ldS5hdXRoMC5jb20vYXBpL3YyLyIsImlhdCI6MTUxOTEzODY0MSwiZXhwIjoxNTU4ODgyNjQxLCJhenAiOiJBRnZxRkJVS2ZYQkZadEhXV2ZXNTBQTmZKOWtYMEp3ZSIsInNjb3BlIjoicmVhZDpjdXJyZW50X3VzZXIgdXBkYXRlOmN1cnJlbnRfdXNlcl9tZXRhZGF0YSBkZWxldGU6Y3VycmVudF91c2VyX21ldGFkYXRhIGNyZWF0ZTpjdXJyZW50X3VzZXJfbWV0YWRhdGEgY3JlYXRlOmN1cnJlbnRfdXNlcl9kZXZpY2VfY3JlZGVudGlhbHMgZGVsZXRlOmN1cnJlbnRfdXNlcl9kZXZpY2VfY3JlZGVudGlhbHMgdXBkYXRlOmN1cnJlbnRfdXNlcl9pZGVudGl0aWVzIiwiZ3R5IjoicGFzc3dvcmQifQ.qtfOUhPtH3TcFOy-7PQ_VuEY20z576V888BnpQuz7-Mgm-s7rApm5yl4NQjsE8pmFJVwI_cjrulRIhD78ZEjpsv5xV_3L7tNdaE8OQlQE61nspm9ut85NMYjGxguh9mEklmxRgL5hKRFhI5IB9JQ0Xve8TtR1Z_sDcjjcTiAiiddizwJTLr4yBrtbcJSFtndGqXx0syLbEdpxLzKsUI12D9QBp_Fps8Lmlj64xERTW1ehLEu7DGUUZJP09uLQ0EZFcIMfLGR5WQf23hsr-aGNql8rSbvjs7w4OzPJe2v8wfQSDHtKM1xgT85iRyPgoD9mB8qJkxX6F8MIWk4Wx_gIw' } }
 ```
-###3. Get stream with images
+### 3. Get stream with images
 
 Step one. Create a directory named example, which will contain the source files, and go to it in the terminal. Then create two files index.html and server.js. Then, using the terminal, install the necessary packages, namely the request module, for executing queries to remote resources, express for creating a server and eventsource for creating an SSE connection.
 
